@@ -1,5 +1,3 @@
-var weatherApp = angular.module('weatherApp');
-
 weatherApp.controller('mainController', ['$scope', '$location', 'forecastService',  function($scope, $location, forecastService){
 	$scope.city=forecastService.city;
 	$scope.$watch('city', function(newValue, oldValue) {

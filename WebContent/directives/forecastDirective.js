@@ -1,4 +1,4 @@
-angular.module('weatherApp')
+weatherApp
 .directive('forecastDirective', function(){
 	return{
 		restrict:"E",

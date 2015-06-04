@@ -1,5 +1,3 @@
-var weatherApp = angular.module('weatherApp', ['ngRoute', 'ngResource']);
-
 weatherApp.controller('forecastController', ['$scope', '$routeParams', 'forecastService', '$resource', function($scope, $routeParams, forecastService, $resource){
 	$scope.city=forecastService.city;
 	$scope.days = $routeParams.days || '2';
